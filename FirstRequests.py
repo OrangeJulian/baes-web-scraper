@@ -6,24 +6,21 @@
 import requests
 from bs4 import BeautifulSoup
 
-#planets = []
+planets = []
 
-# url = "http://swapi.co/api/planets/1/"
+url = "http://swapi.co/api/planets/1/"
 
-# for i in range(1,
-# 	61):
+for i in range(1, 61):
 
-# 	url = "http://swapi.co/api/people/"+str(i)+"/"
+	url = "http://swapi.co/api/people/"+str(i)+"/"
 
-# 	sw = requests.get(url)
-# 	planets.append(sw.text)
+	sw = requests.get(url)
+	planets.append(sw.text)
 
-# for i in range(60):
-# 	print(planets[i])
+for i in range(60):
+	print(planets[i])
 
+print("------------End Results--------------")
 
-url1 = "http://pinchofyum.com/recipes"
-
-r = requests.get(url1)
-
-print(r.text)
+# url1 = "http://pinchofyum.com/recipes"
+# r = requests.get(url1)
