@@ -41,5 +41,10 @@ gen = (x for x in reddit.subreddit('dankmemes').hot(limit=HIT_COUNT) if x.score 
 for submission in gen:
 	image = Image.open(requests.get(submission.url, stream=True).raw)
 	image.show()
-	print(submission.title, '\n', submission.score, '\n', submission.id, '\n', submission.url, '\n', '------------------------------------', '\n')
+	
+	print(submission.title, '\n',
+	submission.score, '\n',
+	submission.id, '\n',
+	submission.url, '\n',
+	'------------------------------------', '\n')
 
